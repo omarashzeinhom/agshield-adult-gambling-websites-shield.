@@ -12,14 +12,19 @@ Original Network Files will be at ~/DNS-Files In case the script does not work
 -------------------------------------------------
 
 1. cd ~/ 
+
 2. git clone 
+
 3. cd Block Illegal Websites
+
 3. chmod +x biw.sh
+
 4. ./biw.sh
+
 
 #Steps For Windows Machines 
 -------------------------------------------------
-#Make sure to run this is power shell not in CMD
+#Make sure to run this is power shell or CMD as admin
 
 1.  Download & Extract Block-Illegal-Websites folder
 
