@@ -21,18 +21,16 @@ Original Network Files will be at ~/DNS-Files In case the script does not work
 -------------------------------------------------
 #Make sure to run this is power shell not in CMD
 
-1.  Download the zip file from the top right button
+1.  Download & Extract Block-Illegal-Websites folder
 
-2.  Extract the contents of the folder using a file extractor like 7zip/winrar
+2.  Copy the Block-Illegal-Websites folder Into the Desktop . 
 
-3.  Copy the No-MAS Folder Into the Desktop . from the No-MAS-Master folder after extracting.
-
-3.  Go into the No-MAS Folder At Desktop.
+3.  Go into the Block-Illegal-Websites Folder At Desktop.
 
 4.  Press Windows + x.
 
 5.  Choose Windows PowerShell (Admin).
 
-6.  Drag the NO-MAS.bat file into PowerShell (Admin)
+6.  Drag the biw.bat file into PowerShell (Admin)
 
 7.  Press Enter & Enjoy :D !!!. 
