@@ -9,7 +9,7 @@ cp hosts ~/Original-DNS-Files && cp resolv.conf ~/Original-DNS-Files
 
 #Changing hosts file to block websites...
 rm hosts && rm resolv.conf 
-cd ~/No-MAS/No-MAS/etc
+cd ~/Block-Illegal-Websites/etc
 cp hosts /etc
 
 
