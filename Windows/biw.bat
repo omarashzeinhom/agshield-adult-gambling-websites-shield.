@@ -1,19 +1,6 @@
 ECHO ON
 
 
-ECHO "BIW Is a script Available for Windows & Linux Designed to Block Possible Ways of you computer to connect to Adult-Content Based Websites"
-
-
-
-
-ECHO "Warning incase of any network Errors Please Copy Your original hosts File at Desktop"
-ECHO " It will be at OriginalFile "
-ECHO " & then COPY hosts to C:\Windows\System32\drivers\etc"
-ECHO " Enjoy your distraction-free Computer"
-
-
-
-
 ECHO "Copying the original Windows Hosts file" 
 
 CD c:\Users\Public\Desktop
@@ -23,7 +10,7 @@ CD C:\Windows\System32\drivers\etc
 COPY hosts c:\Users\Public\Desktop\OriginalFile
 DEL hosts
 CD 
-CD C:\Users\Administrator\Desktop\Block Illegal Websites\etc
+CD C:\Users\Administrator\Downloads\Block-Illegal-Websites-master\Block-Illegal-Websites-master\etc
 COPY hosts C:\Windows\System32\drivers\etc
 ipconfig /flushdns
 
