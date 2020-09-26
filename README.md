@@ -34,8 +34,26 @@ Original Network Files will be at ~/DNS-Files In case the script does not work
 
 4.  Press Windows + x.
 
-5.  Choose Windows PowerShell (Admin).
+5.  Choose Windows PowerShell (Admin) or Command Prompt & Right Click Run as administrator.
 
-6.  Drag the biw.bat file into PowerShell (Admin)
+6.  Drag the biw.bat file into PowerShell (Admin) or CMD (Admin).
 
-7.  Press Enter & Enjoy :D !!!. 
+7.  Press Enter & Enjoy :D !!!.
+
+
+#Steps For MacOS Machines 
+-------------------------------------------------
+
+1.  cd /Library
+
+2.  git clone https://github.com/omarashzeinhom/Block-Illegal-Websites/
+
+3.  cd Block-Illegal-Websites/Mac
+
+4.  chmod +x biw-Mac.sh
+
+5.  ./biw-Mach.sh
+
+
+
+ 
