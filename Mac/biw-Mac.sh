@@ -11,6 +11,10 @@ rm /hosts && rm /resolv.conf
 #Changing hosts file to block websites...
 
 cd ~/Block-Illegal-Websites/etc
-cp hosts /private/etc && cp resolv.conf /private/etc
+cp hosts /private/etc && cp resolv.conf /private/et
+
+#Flushing DNS For Restarting the network Configuration 
+sudo killall -HUP mDNSResponder;say DNS cache has been flushed
+
 
 echo "All Done Enjoy your filtered Computer"
