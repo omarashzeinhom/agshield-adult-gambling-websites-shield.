@@ -5,7 +5,7 @@ Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/
 
 #Original Files Warning 
 This script is not responsible for any loss of data or any errors or related erros in the network of the UNIX Machine
-Original Network Files will be at ~/DNS-Files In case the script does not work 
+Original Network Files will be at ~/DNS-Files.
 
 
 #Steps For Unix/Linux Machines 
