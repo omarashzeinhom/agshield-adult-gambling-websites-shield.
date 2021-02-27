@@ -3,11 +3,11 @@ ECHO ON
 
 ECHO "Copying the original Windows Hosts file" 
 
-CD c:\Users\Public\Desktop
+CD C:\Users\Public\Documents
 MKDIR OriginalFile
 CD
 CD C:\Windows\System32\drivers\etc
-COPY hosts c:\Users\Public\Desktop\OriginalFile
+COPY hosts C:\Users\Public\Documents\OriginalFile
 DEL hosts
 CD 
 CD C:\Users\Administrator\Downloads\Block-Illegal-Websites-master\Block-Illegal-Websites-master\etc
