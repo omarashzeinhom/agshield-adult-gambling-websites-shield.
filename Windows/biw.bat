@@ -19,8 +19,8 @@ CHOICE /C 1234 /M "Enter your choice:"
 
 :: Note - list ERRRORLEVELS in decreasing order
 IF ERRORLEVEL 4 GOTO Check DNS Servers 
-IF ERRORLEVEL 3 GOTO Changing DNS Servers (CloudFlare Family Shield) Win 7
-IF ERRORLEVEL 2 GOTO Changing DNS Servers (CloudFlare Family) Win 10
+IF ERRORLEVEL 3 GOTO Changing DNS Servers Cleanbrowsing Family Windows 7
+IF ERRORLEVEL 2 GOTO Changing DNS Servers Cleanbrowsing  Family Windows 10
 IF ERRORLEVEL 1 GOTO Changing hosts file 
 
 
@@ -34,7 +34,7 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
     XCOPY hosts C:\Users\Public\Documents\OriginalFile
     ECHO "Your original hosts was copied To C:\Users\Public\Documents\OriginalFile" 
     PAUSE
-        ECHO "Deleting Old hosts file .............................................................." 
+    ECHO "Deleting Old hosts file .............................................................." 
     DEL C:\Windows\System32\drivers\etc\hosts 
     ECHO "Deleting Old hosts file .............................................................." 
     XCOPY \hosts C:\Windows\System32\drivers\etc
@@ -44,7 +44,7 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
 ;
 
 
-:Changing Changing DNS Servers (CloudFlare Family) Win10
+:Changing DNS Servers Cleanbrowsing  Family Windows 10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
     ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
     netsh interface ipv4 set dns "Wi-Fi" static 185.228.168.168 primary
@@ -71,11 +71,13 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
     ipconfig /release 
     ipconfig /renew 
     ECHO "Restarted Network Adapters" 
+    ECHO "Add Cleanbrowsing family DNS To Windows 7 ?"
     PAUSE
+    PROMPT
     CLS
 ;
 
-:Changing DNS Servers (CloudFlare) Windows 7
+:Changing DNS Servers Cleanbrowsing Family Windows 7
    ECHO "Windows 7 Ethernet"
    netsh interface ip set dns "Wi-Fi" static 1.1.1.3  primary
    netsh interface ip add dns "Ethernet" static 1.0.0.3 index=2
@@ -87,22 +89,24 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
    netsh interface ip add  dns "Wi-Fi" static 1.0.0.3 index=2
    netsh interface ipv6 set dns "Wi-Fi" static 2a0d:2a00:1:: primary
    netsh interface ipv6 add  dns "Wi-Fi" 2606:4700:4700::1003 index=2
-
-
-    ipconfig /flushdns
-    ipconfig /release 
-    ipconfig /renew 
-    ECHO "Restarted Network Adapters"
-    PAUSE
-    CLS
+   ipconfig /flushdns
+   ipconfig /release 
+   ipconfig /renew 
+   ECHO "Restarted Network Adapters" 
+   ECHO "Check DNS Servers ?"
+   PROMPT
+   PAUSE
+   CLS
 ;
 
 
 :Check DNS Servers 
     IPCONFIG /ALL
     PAUSE
-PROMPT
-
-;
+    PROMPT
+    ECHO "CHECKOUT THE NEW DNS SERVERS 
+    DNS Servers . . . . . . . . . . . : 185.228.168.168
+                                       185.228.169.168" 
+    ;
 
 GOTO END;
