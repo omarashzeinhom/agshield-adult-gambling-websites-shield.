@@ -1,8 +1,8 @@
-#Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’ 
+# Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’ 
 
-##🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                           
+# 🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                           
                                       
-By Omar Zeinhom aka Andgoedu 
+
 ---------
 🛡️ Is a script available for Windows Mac and Linux
 Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files ..
@@ -48,6 +48,8 @@ Original Network Files will be at ~/DNS-Files.
 
 5.  ./biw-Mach.sh
 
-
+<small>
+  By Omar Zeinhom aka Andgoedu 
+  </small>
 
  
