@@ -37,12 +37,11 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
     ECHO "Deleting Old hosts file .............................................................." 
     DEL C:\Windows\System32\drivers\etc\hosts 
     ECHO "Deleting Old hosts file .............................................................." 
-    XCOPY \hosts C:\Windows\System32\drivers\etc
+    XCOPY "%~dp0\hosts" "C:\Windows\System32\drivers\etc" /w 
     ECHO "Your Hosts File Was Changed SuccessFully" 
     PAUSE
     CLS
 ;
-
 
 :Changing DNS Servers Cleanbrowsing  Family Windows 10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
@@ -98,7 +97,6 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
    PAUSE
    CLS
 ;
-
 
 :Check DNS Servers 
     IPCONFIG /ALL
