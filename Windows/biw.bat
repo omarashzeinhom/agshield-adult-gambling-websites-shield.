@@ -1,6 +1,11 @@
 #!/bin/bash 
 @ECHO OFF
 CLS 
+
+TITLE = Block Adult and Gambling Windows by andgoedu
+
+
+
 ECHO 1. Changing hosts file
 ECHO 2. Changing DNS Servers (CloudFlare Family) Win 10
 ECHO 3. Changing DNS Servers (CloudFlare Family Shield) Win 7
@@ -20,62 +25,57 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
 
 
 :Changing hosts file 
-ECHO "Copying the original Windows Hosts file "
-PAUSE
-CD C:\Users\Public\Documents
-MKDIR OriginalFile
-CD
-CD C:\Windows\System32\drivers\etc
-COPY hosts C:\Users\Public\Documents\OriginalFile
-ECHO "Your original hosts.txt was copied To C:\Users\Public\Documents\OriginalFile" 
-PAUSE
-DEL C:\Windows\System32\drivers\etc\hosts
-CD 
-COPY hosts "C:\Windows\System32\drivers\etc"
-ECHO "Your Hosts File Was Changed SuccessFully" 
-PAUSE
-ipconfig /flushdns
-ipconfig /release 
-ipconfig /renew 
-ECHO "Restarted Network Adapters"
-PAUSE ;;
-
-
+    ECHO "Copying the original Windows Hosts file "
+    PAUSE
+    CD C:\Users\Public\Documents
+    MKDIR OriginalFile
+    CD
+    CD C:\Windows\System32\drivers\etc
+    XCOPY hosts C:\Users\Public\Documents\OriginalFile
+    ECHO "Your original hosts was copied To C:\Users\Public\Documents\OriginalFile" 
+    PAUSE
+        ECHO "Deleting Old hosts file .............................................................." 
+    DEL C:\Windows\System32\drivers\etc\hosts 
+    ECHO "Deleting Old hosts file .............................................................." 
+    XCOPY \hosts C:\Windows\System32\drivers\etc
+    ECHO "Your Hosts File Was Changed SuccessFully" 
+    PAUSE
+    CLS
+;
 
 
 :Changing Changing DNS Servers (CloudFlare Family) Win10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
-
-    ECHO  " Changing DNS Of This PC-Only Wifi........................................................" 
+    ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
     netsh interface ipv4 set dns "Wi-Fi" static 185.228.168.168 primary
     netsh interface ipv4 add dns "Wi-Fi" 185.228.169.168 index=2
     netsh interface ipv6 set dns "Wi-Fi" static 2a0d:2a00:1:: primary
     netsh interface ipv6 add dns "Wi-Fi" 2a0d:2a00:2:: index=2
 
-    ECHO  " Changing DNS Of This PC-Only Ethernet .................................................."
+    ECHO  " Changing DNS Of This PC-Only Ethernet ..............................................................."
     netsh interface ipv4 set dns "Ethernet" static 185.228.168.168 primary
     netsh interface ipv4 add dns "Ethernet" 185.228.169.168 index=2
     netsh interface ipv6 set dns "Ethernet" static 2a0d:2a00:1:: primary
     netsh interface ipv6 add dns "Ethernet" 2a0d:2a00:2:: index=2
 
-    ECHO " Changing DNS Of This PC-Only Local Area Connection......................................."
+
     netsh interface ipv4 set dns "Local Area Connection" static 185.228.168.168 primary
     netsh interface ipv4 add dns "Local Area Connection" 185.228.169.168 index=2
     netsh interface ipv6 set dns "Local Area Connection" static 2a0d:2a00:1:: primary
     netsh interface ipv6 add dns "Local Area Connection" 2a0d:2a00:2:: index=2
 
+    ECHO " Changing DNS Of This PC-Only Local Area Connection.............................................."
+
+    
     ipconfig /flushdns
     ipconfig /release 
     ipconfig /renew 
-    ECHO "Restarted Network Adapters" ;;
+    ECHO "Restarted Network Adapters" 
     PAUSE
-
-
-
+    CLS
+;
 
 :Changing DNS Servers (CloudFlare) Windows 7
-
-
    ECHO "Windows 7 Ethernet"
    netsh interface ip set dns "Wi-Fi" static 1.1.1.3  primary
    netsh interface ip add dns "Ethernet" static 1.0.0.3 index=2
@@ -93,15 +93,16 @@ PAUSE ;;
     ipconfig /release 
     ipconfig /renew 
     ECHO "Restarted Network Adapters"
-    PAUSE ;;
+    PAUSE
+    CLS
+;
 
 
-
-
-    :Check DNS Servers 
+:Check DNS Servers 
     IPCONFIG /ALL
     PAUSE
+PROMPT
 
+;
 
-
-    GOTO END;;
+GOTO END;
