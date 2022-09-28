@@ -1,13 +1,8 @@
-#Block Adult Content Win/Mac/Linux Scripts 
-🅱🅰🅶 
-🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 
-🅲🅾🅽🆃🅴🅽🆃 
-🅰🅽🅳 
-🅶🅰🅼🅱🅻🅸🅽🅶                                                                                           
-                                                                                                                                                           
+#🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                           
+                                                                                                                                               
 By omarzeinhom aka Andgoedu 
 ---------
-BIW (Block Illegal Websites) Is a script available for windows & linux 
+🛡️ AGShield Is a script available for windows & linux 
 Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files ..
 
 #Original Files Warning 
