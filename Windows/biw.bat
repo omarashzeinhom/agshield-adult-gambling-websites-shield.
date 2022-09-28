@@ -1,6 +1,32 @@
 #!/bin/bash 
 @ECHO OFF
 CLS 
+ECHO "
+██████╗ ██╗      ██████╗  ██████╗██╗  ██╗
+██╔══██╗██║     ██╔═══██╗██╔════╝██║ ██╔╝
+██████╔╝██║     ██║   ██║██║     █████╔╝ 
+██╔══██╗██║     ██║   ██║██║     ██╔═██╗ 
+██████╔╝███████╗╚██████╔╝╚██████╗██║  ██
+
+ █████╗ ██████╗ ██╗   ██╗██╗  ████████╗
+██╔══██╗██╔══██╗██║   ██║██║  ╚══██╔══╝
+███████║██║  ██║██║   ██║██║     ██║   
+██╔══██║██║  ██║██║   ██║██║     ██║   
+██║  ██║██████╔╝╚██████╔╝███████╗██║   
+╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚══════╝╚═╝   
+
+ ██████╗ ██████╗ ███╗   ██╗████████╗███████╗███╗   ██╗████████╗    
+██╔════╝██╔═══██╗████╗  ██║╚══██╔══╝██╔════╝████╗  ██║╚══██╔══╝    
+██║     ██║   ██║██╔██╗ ██║   ██║   █████╗  ██╔██╗ ██║   ██║       
+██║     ██║   ██║██║╚██╗██║   ██║   ██╔══╝  ██║╚██╗██║   ██║       
+╚██████╗╚██████╔╝██║ ╚████║   ██║   ███████╗██║ ╚████║   ██║       
+ ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝   ╚═╝       
+                                                                   
+
+
+By omarzeinhom aka Andgoedu 
+
+"
 ECHO 1. Changing hosts file
 ECHO 2. Changing DNS Servers (CloudFlare Family) Win10
 ECHO 3. Changing DNS Servers (Family Sheild) Win 7
@@ -26,7 +52,8 @@ CD C:\Windows\System32\drivers\etc
 COPY hosts C:\Users\Public\Documents\OriginalFile
 ECHO "Your original file was copied C:\Users\Public\Documents\OriginalFile " 
 DEL C:\Windows\System32\drivers\etc\hosts
-COPY hosts C:\Windows\System32\drivers\etc
+
+COPY \hosts C:\Windows\System32\drivers\etc
 ipconfig /flushdns
 ECHO "Your Hosts File Was Changed SuccessFully" 
 GOTO END
