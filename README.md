@@ -15,18 +15,9 @@ Original Network Files will be at ~/DNS-Files.
 
 1.  Download & Extract Block-Illegal-Websites folder
 
-2.  Copy the Block-Illegal-Websites folder Into the Desktop . 
+2. Open Windows Folder
 
-3.  Go into the Block-Illegal-Websites Folder At Desktop.
-
-4.  Press Windows + x.
-
-5.  Choose Windows PowerShell (Admin) or Command Prompt & Right Click Run as administrator.
-
-6.  Drag the biw.bat file into PowerShell (Admin) or CMD (Admin).
-
-7.  Press Enter & Enjoy :D !!!.
-
+3. Right Click & Select Run as adminstrator on blockshield.bat 
 
 
 #Steps For Unix/Linux Machines 🐧
