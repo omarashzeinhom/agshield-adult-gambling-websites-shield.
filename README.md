@@ -1,11 +1,6 @@
 #### [Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’- Ayah Al Ahzab 56](https://www.islamawakened.com/quran/33/56/) 
 
-# 🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                           
-
-
-
-                                      
-
+# 🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                          
 ---------
 🛡️ Is a script available for Windows Mac and Linux
 Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files ..
