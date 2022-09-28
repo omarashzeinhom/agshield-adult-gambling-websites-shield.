@@ -23,7 +23,7 @@ IF ERRORLEVEL 3 GOTO Changing DNS Servers Cleanbrowsing Family Windows 7
 IF ERRORLEVEL 2 GOTO Changing DNS Servers Cleanbrowsing  Family Windows 10
 IF ERRORLEVEL 1 GOTO Changing hosts file 
 
-
+GOTO START
 :Changing hosts file 
     ECHO "Copying the original Windows Hosts file "
     PAUSE
@@ -42,7 +42,9 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
     PAUSE
     CLS
 ;
+GOTO END;
 
+GOTO START
 :Changing DNS Servers Cleanbrowsing  Family Windows 10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
     ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
@@ -75,7 +77,9 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
     PROMPT
     CLS
 ;
+GOTO END;
 
+GOTO START
 :Changing DNS Servers Cleanbrowsing Family Windows 7
    ECHO "Windows 7 Ethernet"
    netsh interface ip set dns "Wi-Fi" static 1.1.1.3  primary
@@ -97,14 +101,17 @@ IF ERRORLEVEL 1 GOTO Changing hosts file
    PAUSE
    CLS
 ;
+GOTO END;
 
+GOTO START
 :Check DNS Servers 
     IPCONFIG /ALL
+     ECHO "CHECKOUT THE NEW DNS SERVERS 
+    DNS Servers . . . . . . . . . . . : 
+                                       " 
+    ;
     PAUSE
     PROMPT
-    ECHO "CHECKOUT THE NEW DNS SERVERS 
-    DNS Servers . . . . . . . . . . . : 185.228.168.168
-                                       185.228.169.168" 
-    ;
+   
 
 GOTO END;
