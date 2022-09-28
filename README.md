@@ -2,29 +2,14 @@
                                                                                                                                                
 By omarzeinhom aka Andgoedu 
 ---------
-🛡️ AGShield Is a script available for windows & linux 
+🛡️ Is a script available for Windows Mac and Linux
 Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files ..
 
 #Original Files Warning 
 This script is not responsible for any loss of data or any errors or related erros in the network of the UNIX Machine
 Original Network Files will be at ~/DNS-Files.
 
-
-#Steps For Unix/Linux Machines 
--------------------------------------------------
-
-1. cd ~/ 
-
-2. git clone 
-
-3. cd Block Illegal Websites
-
-3. chmod +x biw.sh
-
-4. ./biw.sh
-
-
-#Steps For Windows Machines 
+#Steps For Windows Machines 🪟
 -------------------------------------------------
 #Make sure to run this is power shell or CMD as admin
 
@@ -43,7 +28,21 @@ Original Network Files will be at ~/DNS-Files.
 7.  Press Enter & Enjoy :D !!!.
 
 
-#Steps For MacOS Machines 
+
+#Steps For Unix/Linux Machines 🐧
+-------------------------------------------------
+1. cd ~/ 
+
+2. git clone 
+
+3. cd Block Illegal Websites
+
+3. chmod +x biw.sh
+
+4. ./biw.sh
+
+
+#Steps For MacOS Machines 🍎
 -------------------------------------------------
 
 1.  cd /Library
