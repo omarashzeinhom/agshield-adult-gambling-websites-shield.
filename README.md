@@ -1,6 +1,9 @@
-# Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’ 
+#### [Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’- Ayah Al Ahzab 56](https://www.islamawakened.com/quran/33/56/) 
 
 # 🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                           
+
+
+
                                       
 
 ---------
