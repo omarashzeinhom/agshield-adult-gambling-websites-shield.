@@ -120,12 +120,10 @@ ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
 
 
 :Changing DNS Servers (CloudFlare) Windows 7
-
-   
    ECHO "Windows 7 Ethernet"
-netsh interface ip set dns "Wi-Fi" static 1.1.1.3  primary
-    netsh interface ip set dns "Ethernet" static 1.0.0.3 index=2
-    netsh interface ipv6 set dns "Wi-Fi" static 2a0d:2a00:1:: primary
+   netsh interface ip set dns "Wi-Fi" static 1.1.1.3  primary
+   netsh interface ip set dns "Ethernet" static 1.0.0.3 index=2
+   netsh interface ipv6 set dns "Wi-Fi" static 2a0d:2a00:1:: primary
    netsh interface ipv6 set dns "Wi-Fi" 2606:4700:4700::1003 index=2        
 
    ECHO "Win7 Wifi"
