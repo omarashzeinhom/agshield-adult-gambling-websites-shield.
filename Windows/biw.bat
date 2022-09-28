@@ -7,7 +7,7 @@ ECHO 3. Changing DNS Servers (Family Sheild) Win 7
 
 
 
-CHOICE /C 1234 /M "Enter your choice:"
+CHOICE /C 123 /M "Enter your choice:"
 
 
 
