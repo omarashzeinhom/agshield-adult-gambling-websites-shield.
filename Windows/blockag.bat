@@ -47,7 +47,7 @@ GOTO START
     ECHO "Your Hosts File Was Changed SuccessFully" 
     PAUSE
     CLS
-;
+REM This Script Just Changes the hosts file to the family safe host file
 GOTO END
 
 GOTO START
@@ -82,7 +82,7 @@ GOTO START
     PAUSE
     PROMPT
     CLS    
-;
+
 GOTO END
 
 GOTO START
@@ -108,7 +108,7 @@ GOTO START
     PAUSE
     PROMPT
     CLS    
-;
+
 GOTO END
 
 
@@ -171,7 +171,7 @@ GOTO START
     PAUSE
     PROMPT
     CLS
-;
+
 GOTO END
 
 GOTO START
@@ -198,7 +198,7 @@ GOTO START
     PAUSE
     PROMPT
     CLS
-;
+
 GOTO END
 
 
@@ -261,7 +261,7 @@ GOTO START
     PAUSE
     PROMPT
     CLS
-;
+
 GOTO END
 
 GOTO START
@@ -287,15 +287,12 @@ GOTO START
     PAUSE
     PROMPT
     CLS
-;
+
 GOTO END
 
-
-
+GOTO START
 :Check_DNS_Servers 
 IPCONFIG /ALL
 ECHO "CHECKOUT THE NEW DNS SERVERS DNS Servers" 
 PAUSE
-
-;
 GOTO END
