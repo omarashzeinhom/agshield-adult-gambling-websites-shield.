@@ -204,8 +204,38 @@ GOTO END
 
 GOTO START
 :GoogleDNS_Win10
-    ECHO "Changing Search Engine Results to GoogleDNS_Win10."
+   ECHO "Changing Search Engine Results to GoogleDNS_Win10."
     ECHO  " Changing DNS Of This PC-Only Wifi To GoogleDNS_Win10..............................................................................." 
+    netsh interface ipv4 set dnsservers "Wi-Fi" static 8.8.8.8 primary 
+    netsh interface ipv4 add dnsservers "Wi-Fi" 8.8.4.4 index=2
+    ECHO  ".............Changing IPV6 DNS Of This PC-Only Wifi GoogleDNS_Win10g ..............................................................................." 
+    netsh interface ipv6 set dnsservers "Wi-Fi" static 2001:4860:4860::8888 primary 
+    netsh interface ipv6 add dnsservers "Wi-Fi" 2a0d:2a00:2:: index=2 
+    ECHO  ".............Changing IPV4 DNS Of This PC-Only Ethernet GoogleDNS_Win10 ..............................................................................." 
+    netsh interface ipv4 set dnsservers "Ethernet" static 8.8.8.8 primary 
+    netsh interface ipv4 add dnsservers "Ethernet" 8.8.4.4 index=2
+    ECHO  ".............Changing IPV6 DNS Of This PC-Only Ethernet GoogleDNS_Win10 ..............................................................................." 
+    netsh interface ipv6 set dnsservers "Wi-Fi" static 2001:4860:4860::8888 primary 
+    netsh interface ipv6 add dnsservers "Wi-Fi" 2a0d:2a00:2:: index=2 
+    ECHO  ".............Changing IPV4 DNS Of This PC-Only Local Area Connection GoogleDNS_Win10 ..............................................................................." 
+    netsh interface ipv4 set dnsservers "Local Area Connection" static 8.8.8.8 primary  
+    netsh interface ipv4 add dnsservers "Local Area Connection" 8.8.4.4 index=2
+    ECHO  ".............Changing IPV6 DNS Of This PC-Only Local Area Connection GoogleDNS_Win10 ..............................................................................." 
+    netsh interface ipv6 set dnsservers "Local Area Connection" static 2001:4860:4860::8888 primary 
+    netsh interface ipv6 add dnsservers "Local Area Connection" 2a0d:2a00:2:: index=2 
+    ipconfig /flushdns
+    ECHO "...................Flushing DNS..............." 
+    ipconfig /release 
+    ECHO "....................Releasing DNS................." 
+    ipconfig /renew 
+    ECHO ".......................Renewing DNS............." 
+    ipconfig /all
+    ECHO "Restarted Network Adapters and CHECK DNS Servers" 
+    PAUSE
+    PROMPT
+    CLS    
+    
+  
     netsh interface ipv4 set dns "Wi-Fi" 8.8.8.8 primary
     netsh interface ipv4 add dns "Wi-Fi" 8.8.4.4 index=2
     netsh interface ipv6 set dns "Wi-Fi" 2001:4860:4860::8888 primary
