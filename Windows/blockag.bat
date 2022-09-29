@@ -3,10 +3,10 @@
 CLS 
 TITLE = Block Adult and Gambling Windows by andgoedu
 
-ECHO 1. Changing hosts file
-ECHO 2. Changing DNS Servers (CloudFlare Family) Win 10
-ECHO 3. Changing DNS Servers (CloudFlare Family Shield) Win 7
-ECHO 4. Check DNS Servers 
+ECHO 1. Changing_hosts_file
+ECHO 2. ChangingDNS_CloudFlare_Family_Win10
+ECHO 3. ChangingDNS_CloudFlare_Family_Shield_Win_7
+ECHO 4. Check_DNS_Servers 
 
 
 
@@ -15,13 +15,13 @@ CHOICE /C 1234 /M "Enter your choice:"
 
 
 :: Note - list ERRRORLEVELS in decreasing order
-IF ERRORLEVEL 4 GOTO Check DNS Servers 
-IF ERRORLEVEL 3 GOTO Changing DNS Servers Cleanbrowsing Family Windows 7
-IF ERRORLEVEL 2 GOTO Changing DNS Servers Cleanbrowsing Family Windows 10
-IF ERRORLEVEL 1 GOTO Changing hosts file 
+IF ERRORLEVEL 4 GOTO Check_DNS_Servers 
+IF ERRORLEVEL 3 GOTO CloudFlareDNS_Family_Shield_Win_7
+IF ERRORLEVEL 2 GOTO DNS_CloudFlare_Family_Win10
+IF ERRORLEVEL 1 GOTO hosts_file
 
 GOTO START
-:Changing hosts file 
+:hosts_file
     ECHO "Copying the original Windows Hosts file "
     PAUSE
     CD C:\Users\Public\Documents
@@ -40,7 +40,7 @@ GOTO START
     CLS
 ;
 
-:Changing DNS Servers Cleanbrowsing Family Windows 10
+:DNS_CloudFlare_Family_Win10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
     ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
     netsh interface ipv4 set dns "Wi-Fi" static 185.228.168.168 primary
@@ -71,7 +71,7 @@ GOTO START
     CLS
 ;
 
-:Changing DNS Servers Cleanbrowsing Family Windows 7
+:CloudFlareDNS_Family_Shield_Win_7
    ECHO "Windows 7 Ethernet"
    netsh interface ip set dns "Wi-Fi" static 1.1.1.3  primary
    netsh interface ip add dns "Ethernet" static 1.0.0.3 index=2
@@ -90,7 +90,7 @@ GOTO START
    PAUSE
 ;
 
-:Check DNS Servers 
+:Check_DNS_Servers 
     IPCONFIG /ALL
     ECHO "CHECKOUT THE NEW DNS SERVERS DNS Servers" 
 ;
