@@ -54,19 +54,19 @@ GOTO START
 :CleanBrowsing_Family_Win10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
     ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
-      netsh interface ipv4 set dns "Wi-Fi" static 185.228.168.168 primary
+      netsh interface ipv4 set dns "Wi-Fi" 185.228.168.168 primary
     netsh interface ipv4 add dns "Wi-Fi" 185.228.169.168 index=2
-    netsh interface ipv6 set dns "Wi-Fi" static 2a0d:2a00:1:: primary
+    netsh interface ipv6 set dns "Wi-Fi" 2a0d:2a00:1:: primary
     netsh interface ipv6 add dns "Wi-Fi" 2a0d:2a00:2:: index=2
     ECHO  " Changing DNS Of This PC-Only Ethernet ..............................................................."
-      netsh interface ipv4 set dns "Wired Ethernet Connection" static 185.228.168.168 primary
+      netsh interface ipv4 set dns "Wired Ethernet Connection" 185.228.168.168 primary
     netsh interface ipv4 add dns "Wired Ethernet Connection" 185.228.169.168 index=2
-    netsh interface ipv6 set dns "Wired Ethernet Connection" static 2a0d:2a00:1:: primary
+    netsh interface ipv6 set dns "Wired Ethernet Connection" 2a0d:2a00:1:: primary
     netsh interface ipv6 add dns "Wired Ethernet Connection" 2a0d:2a00:2:: index=2
 
-    netsh interface ipv4 set dns "Local Area Connection" static 185.228.168.168 primary
+    netsh interface ipv4 set dns "Local Area Connection" 185.228.168.168 primary
     netsh interface ipv4 add dns "Local Area Connection" 185.228.169.168 index=2
-    netsh interface ipv6 set dns "Local Area Connection" static 2a0d:2a00:1:: primary
+    netsh interface ipv6 set dns "Local Area Connection" 2a0d:2a00:1:: primary
     netsh interface ipv6 add dns "Local Area Connection" 2a0d:2a00:2:: index=2
 
     ECHO " Changing DNS Of This PC-Only Local Area Connection.............................................."
@@ -105,20 +105,20 @@ GOTO START
 :DNS_CloudFlare_Family_Win10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
     ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
-    netsh interface ipv4 set dns "Wi-Fi" static 1.1.1.3 primary
-    netsh interface ipv4 add dns "Wi-Fi" static 1.0.0.3 index=2
-    netsh interface ipv6 set dns "Wi-Fi" static 2606:4700:4700::1113 primary
-    netsh interface ipv6 add dns "Wi-Fi" static 2606:4700:4700::1003 index=2
+    netsh interface ipv4 set dns "Wi-Fi" 1.1.1.3 primary
+    netsh interface ipv4 add dns "Wi-Fi" 1.0.0.3 index=2
+    netsh interface ipv6 set dns "Wi-Fi" 2606:4700:4700::1113 primary
+    netsh interface ipv6 add dns "Wi-Fi" 2606:4700:4700::1003 index=2
     ECHO  " Changing DNS Of This PC-Only Ethernet ..............................................................."
-    netsh interface ipv4 set dns "Wired Ethernet Connection" static 1.1.1.3 primary
-    netsh interface ipv4 add dns "Wired Ethernet Connection" static 1.0.0.3 index=2
-    netsh interface ipv6 set dns "Wired Ethernet Connection" static 2606:4700:4700::1113 primary
-    netsh interface ipv6 add dns "Wired Ethernet Connection" static 2606:4700:4700::1003 index=2
+    netsh interface ipv4 set dns "Wired Ethernet Connection" 1.1.1.3 primary
+    netsh interface ipv4 add dns "Wired Ethernet Connection" 1.0.0.3 index=2
+    netsh interface ipv6 set dns "Wired Ethernet Connection" 2606:4700:4700::1113 primary
+    netsh interface ipv6 add dns "Wired Ethernet Connection" 2606:4700:4700::1003 index=2
     ECHO " Changing DNS Of This PC-Only Local Area Connection.............................................."
-    netsh interface ipv4 set dns "Local Area Connection" static 1.1.1.3 primary
-    netsh interface ipv4 add dns "Local Area Connection" static 1.0.0.3 index=2
-    netsh interface ipv6 set dns "Local Area Connection" static 2606:4700:4700::1113 primary
-    netsh interface ipv6 add dns "Local Area Connection" static 2606:4700:4700::1003 index=2
+    netsh interface ipv4 set dns "Local Area Connection" 1.1.1.3 primary
+    netsh interface ipv4 add dns "Local Area Connection" 1.0.0.3 index=2
+    netsh interface ipv6 set dns "Local Area Connection" 2606:4700:4700::1113 primary
+    netsh interface ipv6 add dns "Local Area Connection" 2606:4700:4700::1003 index=2
 
     ipconfig /flushdns
     ipconfig /release 
@@ -156,20 +156,20 @@ GOTO START
 :GoogleDNS_Win10
     ECHO "Changing Search Engine Results to Safe Family (CloudFlare Family DNS)."
     ECHO  " Changing DNS Of This PC-Only Wifi..............................................................................." 
-    netsh interface ipv4 set dns "Wi-Fi" static 8.8.8.8 primary
-    netsh interface ipv4 add dns "Wi-Fi" static  static 8.8.4.4 index=2
-    netsh interface ipv6 set dns "Wi-Fi" static 2001:4860:4860::8888 primary
-    netsh interface ipv6 add dns "Wi-Fi" static 2001:4860:4860::8844 index=2        
+    netsh interface ipv4 set dns "Wi-Fi" 8.8.8.8 primary
+    netsh interface ipv4 add dns "Wi-Fi" 8.8.4.4 index=2
+    netsh interface ipv6 set dns "Wi-Fi" 2001:4860:4860::8888 primary
+    netsh interface ipv6 add dns "Wi-Fi"  2001:4860:4860::8844 index=2        
     ECHO  " Changing DNS Of This PC-Only Ethernet ..............................................................."
-    netsh interface ipv4 set dns "Wired Ethernet Connection" static 8.8.8.8 primary
-    netsh interface ipv4 add dns "Wired Ethernet Connection" static 8.8.4.4 index=2
-    netsh interface ipv6 set dns "Wired Ethernet Connection" static 2001:4860:4860::8888 primary
-    netsh interface ipv6 add dns "Wired Ethernet Connection" static 2001:4860:4860::8844 index=2  
+    netsh interface ipv4 set dns "Wired Ethernet Connection"  8.8.8.8 primary
+    netsh interface ipv4 add dns "Wired Ethernet Connection" 8.8.4.4 index=2
+    netsh interface ipv6 set dns "Wired Ethernet Connection" 2001:4860:4860::8888 primary
+    netsh interface ipv6 add dns "Wired Ethernet Connection" 2001:4860:4860::8844 index=2  
     ECHO  " Changing DNS Of This PC-Only Ethernet ..............................................................."
-    netsh interface ipv4 set dns "Local Area Connection" static 8.8.8.8 primary
-    netsh interface ipv4 add dns "Local Area Connection" static  8.8.4.4 index=2
-    netsh interface ipv6 set dns "Local Area Connection" static 2001:4860:4860::8888 primary
-    netsh interface ipv6 add dns "Local Area Connection" static 2001:4860:4860::8844 index=2  
+    netsh interface ipv4 set dns "Local Area Connection" 8.8.8.8 primary
+    netsh interface ipv4 add dns "Local Area Connection" 8.8.4.4 index=2
+    netsh interface ipv6 set dns "Local Area Connection" 2001:4860:4860::8888 primary
+    netsh interface ipv6 add dns "Local Area Connection" 2001:4860:4860::8844 index=2  
     ECHO " Changing DNS Of This PC-Only Local Area Connection.............................................."
     ipconfig /flushdns
     ipconfig /release 
