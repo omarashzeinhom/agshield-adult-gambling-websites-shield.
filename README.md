@@ -17,7 +17,7 @@ Original Network Files will be at ~/DNS-Files.
 
 2. Open Windows Folder
 
-3. Right Click & Select Run as adminstrator on blockshield.bat 
+3. Right Click & Select Run as adminstrator on blockag.bat 
 
 
 #Steps For Unix/Linux Machines 🐧
@@ -55,3 +55,5 @@ Original Network Files will be at ~/DNS-Files.
 
 ### References
 1. [1.1.1.1/setup/](https://developers.cloudflare.com/1.1.1.1/setup/)
+2. [change-ipv4-ipv6-dns-server-address](https://www.tenforums.com/tutorials/77444-change-ipv4-ipv6-dns-server-address-windows.html)
+3. [delete git tag amazon docs](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-delete-tag.html)
