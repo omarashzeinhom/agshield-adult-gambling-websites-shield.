@@ -1,9 +1,9 @@
-#### [Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’- Ayah Al Ahzab 56](https://www.islamawakened.com/quran/33/56/) 
+#### <quote>["Indeed God and His angels bless the Prophet; O you who have faith! Invoke blessings on him and invoke Peace upon him in a worthy manner.’- Ayah Al Ahzab 56"](https://www.islamawakened.com/quran/33/56/)</qutore>
 
-# 🛡️ 🅱🅻🅾🅲🅺 🅰🅳🆄🅻🆃 🅲🅾🅽🆃🅴🅽🆃 🅰🅽🅳 🅶🅰🅼🅱🅻🅸🅽🅶                                                                                          
+# Block Adult and Gambing Websites v1.0 🛡️                                                                                   
 ---------
-🛡️ Is a script available for Windows Mac and Linux
-Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files ..
+🛡️ Its a .bat script available for Windows , and .sh script for Mac and Linux
+Designed to block Access to Adult Industry Websites Utilizing /etc/hosts & /etc/resolv.conf files .. aswell as DNS Servers of Your Choice
 
 #Original Files Warning 
 This script is not responsible for any loss of data or any errors or related erros in the network of the UNIX Machine
